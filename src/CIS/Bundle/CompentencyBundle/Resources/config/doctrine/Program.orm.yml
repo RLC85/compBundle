@@ -1,0 +1,23 @@
+CIS\Bundle\CompentencyBundle\Entity\Program:
+    type: entity
+    table: Program
+    repositoryClass: CIS\Bundle\CompentencyBundle\Entity\ProgramRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        slug:
+            type: string
+            length: 255
+    oneToMany:
+        courses:
+            targetEntity: Course
+            mappedBy: program
+            cascade: ["persist", "merge"]
+    lifecycleCallbacks: {  }

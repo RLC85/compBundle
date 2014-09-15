@@ -1,0 +1,7 @@
+parameters:
+#    cis_user.example.class: CIS\Bundle\UserBundle\Example
+
+services:
+#    cis_user.example:
+#        class: %cis_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

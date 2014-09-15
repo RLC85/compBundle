@@ -1,0 +1,14 @@
+cis_website:
+    resource: "@CISWebsiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+cis_user:
+    resource: "@CISUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+cis_compentency:
+    resource: "@CISCompentencyBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

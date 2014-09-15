@@ -1,0 +1,7 @@
+parameters:
+#    cis_compentency.example.class: CIS\Bundle\CompentencyBundle\Example
+
+services:
+#    cis_compentency.example:
+#        class: %cis_compentency.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

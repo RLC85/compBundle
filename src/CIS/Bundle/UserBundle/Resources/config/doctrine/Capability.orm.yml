@@ -1,0 +1,29 @@
+CIS\Bundle\UserBundle\Entity\Capability:
+    type: entity
+    table: cis_capability
+    repositoryClass: CIS\Bundle\UserBundle\Entity\CapabilityRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        slug:
+            type: string
+            length: 255
+    manyToMany:
+        groups:
+            targetEntity: Group
+            joinTable:
+                name: cis_capability_group
+                joinColumns:
+                    capability_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    group_id:
+                        referencedColumnName: id
+    lifecycleCallbacks: {  }

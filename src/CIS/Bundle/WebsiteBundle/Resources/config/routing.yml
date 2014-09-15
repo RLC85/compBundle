@@ -1,0 +1,3 @@
+cis_website_homepage:
+    path:     /
+    defaults: { _controller: CISWebsiteBundle:Default:index }

@@ -1,0 +1,22 @@
+CIS\Bundle\UserBundle\Entity\User:
+    type: entity
+    table: cis_user
+    repositoryClass: CIS\Bundle\UserBundle\Entity\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    manyToMany:
+        groups:
+            targetEntity: Group
+            joinTable:
+                name: cis_user_group
+                joinColumns:
+                    user_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    group_id:
+                        referencedColumnName: id
+    lifecycleCallbacks: {  }

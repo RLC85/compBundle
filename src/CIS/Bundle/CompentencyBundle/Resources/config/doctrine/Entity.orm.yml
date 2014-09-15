@@ -1,0 +1,24 @@
+CIS\Bundle\CompentencyBundle\Entity\Entity:
+    type: entity
+    table: Entity
+    repositoryClass: CIS\Bundle\CompentencyBundle\Entity\EntityRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        slug:
+            type: string
+            length: 255
+    oneToMany:
+        compentencies:
+            targetEntity: Compentency
+            mappedBy: entity
+            cascade: ["persist", "merge"]
+
+    lifecycleCallbacks: {  }

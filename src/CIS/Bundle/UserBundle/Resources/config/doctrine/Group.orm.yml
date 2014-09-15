@@ -1,0 +1,11 @@
+CIS\Bundle\UserBundle\Entity\Group:
+    type: entity
+    table: cis_group
+    repositoryClass: CIS\Bundle\UserBundle\Entity\GroupRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

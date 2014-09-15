@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>{{pageTitle}}</title>
+        {% block css %}
+
+        {% endblock %}
+        {% block javascript %}
+            
+        {% endblock %}
+    </head>
+    <header>
+        <h1>{{pageTitle}}</h1>
+        <nav id="top">
+            <ul>
+                <li><a href="{{ path('cis_user_homepage') }}">User Management</a></li>
+                <li><a href="{{ path('cis_compentency_homepage') }}">Compentency Browser</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        {% block content %}
+            <p>Welcome to the CIS Compentency Browser. Just follow the links below to get started.</p>
+        {% endblock %}
+        <footer>
+            {% block footerJavascripts %}
+            {% endblock %}
+        </footer>
+    </body>
+</html>

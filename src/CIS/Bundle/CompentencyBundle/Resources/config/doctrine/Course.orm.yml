@@ -1,0 +1,25 @@
+CIS\Bundle\CompentencyBundle\Entity\Course:
+    type: entity
+    table: Course
+    repositoryClass: CIS\Bundle\CompentencyBundle\Entity\CourseRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        slug:
+            type: string
+            length: 255
+        description: 
+            type: string
+            length: 1000
+    manyToOne:
+        program:
+            targetEntity: Program
+            inversedBy: course
+    lifecycleCallbacks: {  }
