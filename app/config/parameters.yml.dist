@@ -1,19 +1,48 @@
+# This file is auto-generated during the composer install
 parameters:
-    database_driver:   pdo_mysql
-    database_host:     127.0.0.1
-    database_port:     ~
-    database_name:     symfony
-    database_user:     root
+    database_driver: pdo_pgsql
+    database_host: 127.0.0.1
+    database_port: ~
+    database_name: compentency_dev
+    database_user: root
     database_password: ~
-
-    mailer_transport:  smtp
-    mailer_host:       127.0.0.1
-    mailer_user:       ~
-    mailer_password:   ~
-
-    locale:            en
-    secret:            ThisTokenIsNotSoSecretChangeIt
-
-    debug_toolbar:          true
-    debug_redirects:        false
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: root
+    mailer_password: ~
+    locale: en
+    secret: ThisTokenIsNotSoSecretChangeIt
+    debug_toolbar: true
+    debug_redirects: false
     use_assetic_controller: true
+    capabilities:
+        user:
+            create_users: "Create Users"
+            list_users: "List Users"
+            edit_users: "Edit Users"
+            delete_users: "Delete Users"
+        group:
+            create_user_group: "Create User Group"
+            list_user_group: "List User Groups"
+            edit_user_group: "Edit User Group"
+            delete_user_group: "Delete User Group"
+        roles:
+            create_groups: "Create Groups"
+            list_groups: "List Groups"
+            edit_groups: "Edit Groups"
+            delete_groups: "Delete Groups"
+        compentency:
+            create_compentencies: "Create Competencies"
+            list_compentencies: "List Compentencies"
+            edit_compentencies: "Edit Compentencies"
+            delete_compentencies: "Delete Compentencies"
+        courses:
+            create_courses: "Create Courses"
+            list_courses: "List Courses"
+            edit_courses: "Edit Courses"
+            delete_courses: "Delete Courses"
+        course_pack:
+            create_course_pack: "Create Course Pack"
+            list_course_pack: "List Course Pack"
+            edit_course_pack: "Edit Course Pack"
+            delete_course_pack: "Delete Course Pack"
